@@ -1,0 +1,152 @@
+
+body{
+    height: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(21, 20, 25);
+}
+
+.card {
+    position: relative;
+    padding: 10px;
+    width: max(20vw, 20em);
+    height: max(25vw, 25em);
+    background-color: rgb(21, 21, 21);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.441);
+    border-radius: 10px;
+}   
+
+.card div {
+  margin-bottom: 10px;
+}
+.card img {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  border: 4px solid purple; 
+}
+.card .clear {
+  width: 100%;
+  height: 15%;
+}
+.card .title {
+  width: 100%;
+  height: 30%;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(168, 5, 168);
+}
+
+.card .title h1{
+  animation: text 5s infinite;
+}
+
+@keyframes text {
+  0%, 100%{
+    transform: translateY(70px);
+  } 50%{
+    transform: translateY(-1px);
+  }
+}
+
+.card .content {
+  width: 100%;
+  height: 47%;
+  transform: translateY(32%);
+  font-size: 34px;
+  color: purple;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+
+.card .content .button button{
+  background-color: rgb(21, 21, 21);
+  font-size:25px ;
+  color: purple;
+  width: 150px;
+  height: 60px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.441);
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.card .content .button button{
+  border-radius: 10px;
+  width: 150px;
+  height: 60px;
+  padding: 5px 0;
+  font-size: 24px;
+  font-weight: 500;
+  color: rgb(168, 5, 168);
+  transition: 0.3s;
+  border: none;
+}
+
+h1 {
+  text-align: center;
+  margin: 35px 0 20px 0 !important;
+}
+
+.container .btn{
+  background-color: rgb(168, 5, 168);
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  align-items: baseline;
+  justify-content: flex-end;
+  border: none;
+width: 120px;
+height: 20px;
+color: white;
+box-shadow: 15px black;
+border-radius: 10px;
+
+}
+
+.container{
+  background-color: rgb(21, 21, 21);
+  color: rgb(168, 5, 168);
+  font-size: 20px;
+  padding: 0 5px;
+  display: flex;
+  align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-radius: 20px;
+    height: 420px;
+    margin-top: 100px;
+}
+
+.col input{
+
+  background-color: rgb(21, 20, 25);
+  border: 5px solid rgb(168, 5, 168);
+  height: 49px;
+  width: 300px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.441); 
+  color: white;
+  border-radius: 10px;
+  
+}
+
+.form-group textarea{
+  background-color: rgb(21, 20, 25);
+  border: 5px solid rgb(168, 5, 168);
+  width: 170px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.441);
+  color: white;
+  border-radius: 10px;
+  height: 49px;
+  width: 300px;
+}
